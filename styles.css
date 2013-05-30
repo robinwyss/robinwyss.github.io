@@ -13,242 +13,27 @@ a:hover{
 }
 
 /* BLUR */
-h1 a {
+h1 span {
 	-webkit-transition: all 1s;
 	color: transparent;
 	text-decoration: none;
-	font-size: 50px;
-	text-shadow: 0px 0px 10px #333;
+	font-size: 250px;
+	text-shadow: 0px 0px 0px #333;
 }
-h1 a:hover {
-	 -webkit-transition: all 1s;
-	 color: transparent;
-	  text-decoration: none;
-	  font-size: 50px;
+h1 a, h1 a:hover {
+    text-decoration: none;
+}
+h1:hover span:hover {
+	-webkit-transition: all 1s;
     /*-moz-transition: all 2s 2s linear;*/
     /*-o-transition: all 2s 2s linear;*/
     /*-ms-transition: all 2s 2s linear;*/
-	text-shadow: 0px 0px 0px #333;
+	text-shadow: 0px 0px 10px #333;
 }
-
-/* CUBE */
-.cssCube
-{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0);
+h1:hover span {
+    -webkit-transition: all 1s;
+    /*-moz-transition: all 2s 2s linear;*/
+    /*-o-transition: all 2s 2s linear;*/
+    /*-ms-transition: all 2s 2s linear;*/
+    text-shadow: 0px 0px 5px #333;
 }
-
-.cssCube div
-{
-    border: 1px solid #444;
-}
-.cssCube:hover
-{
-    /* safari chrome */
-    -webkit-transition: -webkit-transform 2s;
-    -webkit-transform-origin-x: 100%;
-    -webkit-transform-origin-y: 100%;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform: rotateX(-15deg) rotateY(-40deg);
-    /* opera */
-    -o-transition: -webkit-transform 2s;
-    -o-transform-origin-x: 100%;
-    -o-transform-origin-y: 100%;
-    -o-transform-style: preserve-3d;
-    -o-transform: rotateX(-15deg) rotateY(-40deg);
-    /* firefox */
-    -moz-transition: -webkit-transform 2s;
-    -moz-transform-origin-x: 100%;
-    -moz-transform-origin-y: 100%;
-    -moz-transform-style: preserve-3d;
-    -moz-transform: rotateX(-15deg) rotateY(-40deg);
-    /* ie */
-    -ms-transition: -webkit-transform 2s;
-    -ms-transform-origin-x: 100%;
-    -ms-transform-origin-y: 100%;
-    -ms-transform-style: preserve-3d;
-    -ms-transform: rotateX(-15deg) rotateY(-40deg);
-    /* w3c */
-    transition: -webkit-transform 2s;
-    transform-origin-x: 100%;
-    transform-origin-y: 100%;
-    transform-style: preserve-3d;
-    transform: rotateX(-15deg) rotateY(-40deg);
-}
-
-.cssCube .text
-{
-    font-size: 46px;
-}
-.cssCube .pan3 .text a{
-    font-size: 40px;
-}
-
-.cube, .cube div {
-    width: 400px;
-    height: 400px;
-}
-
-.cube div
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.cssCube:hover div {
-    background-color: #FFF;
-}
-
-/* front */
-.cube .pan1
-{
-    -webkit-backface-visibility: visible;
-    -webkit-transform: translateZ(400px);
-
-    -o-backface-visibility: visible;
-    -o-transform: translateZ(400px);
-
-    -moz-backface-visibility: visible;
-    -moz-transform: translateZ(400px);
-
-    -ms-backface-visibility: visible;
-    -ms-transform: translateZ(400px);
-
-    backface-visibility: visible;
-    transform: translateZ(400px);
-}
-
-/* left */
-.cube .pan2
-{
-    -webkit-backface-visibility: visible;
-    -webkit-transform-origin-x: 0%;
-    -webkit-transform-origin-y: 0%;
-    -webkit-transform: rotateY(-90deg);
-
-    -o-backface-visibility: visible;
-    -o-transform-origin-x: 0%;
-    -o-transform-origin-y: 0%;
-    -o-transform: rotateY(-90deg);
-
-    -moz-backface-visibility: visible;
-    -moz-transform-origin-x: 0%;
-    -moz-transform-origin-y: 0%;
-    -moz-transform: rotateY(-90deg);
-
-    -ms-backface-visibility: visible;
-    -ms-transform-origin-x: 0%;
-    -ms-transform-origin-y: 0%;
-    -ms-transform: rotateY(-90deg);
-
-    backface-visibility: visible;
-    transform-origin-x: 0%;
-    transform-origin-y: 0%;
-    transform: rotateY(-90deg);
-}
-
-/* right */
-.cube .pan3
-{
-    -webkit-backface-visibility: visible;
-    -webkit-transform-origin-x: 100%;
-    -webkit-transform-origin-y: 100%;
-    -webkit-transform: rotateY(90deg);
-
-    -o-backface-visibility: visible;
-    -o-transform-origin-x: 100%;
-    -o-transform-origin-y: 100%;
-    -o-transform: rotateY(90deg);
-
-    -moz-backface-visibility: visible;
-    -moz-transform-origin-x: 100%;
-    -moz-transform-origin-y: 100%;
-    -moz-transform: rotateY(90deg);
-
-    -ms-backface-visibility: visible;
-    -ms-transform-origin-x: 100%;
-    -ms-transform-origin-y: 100%;
-    -ms-transform: rotateY(90deg);
-
-    backface-visibility: visible;
-    transform-origin-x: 100%;
-    transform-origin-y: 100%;
-    transform: rotateY(90deg);
-}
-
-/* top */
-.cube .pan4
-{
-    -webkit-backface-visibility: visible;
-    -webkit-transform-origin-x: 0%;
-    -webkit-transform-origin-y: 0%;
-    -webkit-transform: rotateX(90deg);
-
-    -o-backface-visibility: visible;
-    -o-transform-origin-x: 0%;
-    -o-transform-origin-y: 0%;
-    -o-transform: rotateX(90deg);
-
-    -moz-backface-visibility: visible;
-    -moz-transform-origin-x: 0%;
-    -moz-transform-origin-y: 0%;
-    -moz-transform: rotateX(90deg);
-
-    -ms-backface-visibility: visible;
-    -ms-transform-origin-x: 0%;
-    -ms-transform-origin-y: 0%;
-    -ms-transform: rotateX(90deg);
-
-    backface-visibility: visible;
-    transform-origin-x: 0%;
-    transform-origin-y: 0%;
-    transform: rotateX(90deg);
-}
-
-/* bottom */
-.cube .pan5
-{
-    -webkit-backface-visibility: visible;
-    -webkit-transform-origin-x: 100%;
-    -webkit-transform-origin-y: 100%;
-    -webkit-transform: rotateX(-90deg);
-
-    -o-backface-visibility: visible;
-    -o-transform-origin-x: 100%;
-    -o-transform-origin-y: 100%;
-    -o-transform: rotateX(-90deg);
-
-    -moz-backface-visibility: visible;
-    -moz-transform-origin-x: 100%;
-    -moz-transform-origin-y: 100%;
-    -moz-transform: rotateX(-90deg);
-
-    -ms-backface-visibility: visible;
-    -ms-transform-origin-x: 100%;
-    -ms-transform-origin-y: 100%;
-    -ms-transform: rotateX(-90deg);
-
-    backface-visibility: visible;
-    transform-origin-x: 100%;
-    transform-origin-y: 100%;
-    transform: rotateX(-90deg);
-}
-
-/* back */
-.cube .pan6
-{
-    -webkit-backface-visibility: visible;
-
-    -o-backface-visibility: visible;
-
-    -moz-backface-visibility: visible;
-
-    -ms-backface-visibility: visible;
-
-    backface-visibility: visible;
-}
-
