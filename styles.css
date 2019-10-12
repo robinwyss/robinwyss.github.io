@@ -1,61 +1,36 @@
 .content {
-    font-size: 4em;
-    font-family: 'helvetica neue', helvetica, arial , sans-serif;
+	
+	font-family: 'Nunito','helvetica neue', helvetica, arial , sans-serif;
     text-align: center;
-    margin-top: 10%;
 	color: #16161D;
-	-webkit-animation: fadein 2s; /* Safari and Chrome */
-	-moz-animation: fadein 2s; /* Firefox */
-	-ms-animation: fadein 2s; /* Internet Explorer */
-	-o-animation: fadein 2s; /* Opera */
 	animation: fadein 2s;
 }
-		.content .title {
-			margin-bottom: 10%;
-		}
-        .content .title span:first-child {
-            font-weight: bold;
-        }
-		.content .links > a {
-			width: 20%;
-			display: inline-block;
-			color: #16161D;
-			text-decoration: none;
-		}
-		.content .links a .link-text {
-			font-size: 0.3em;
-			visibility: hidden;
-			transition: visibility .25s ease-in-out;
-		}
-		.content .links a:hover .link-text {
-			visibility: visible;
-			transition: visibility .25s ease-in-out;
-		}
-		
-		@keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
-		/* Firefox */
-		@-moz-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
 
-		/* Safari and Chrome */
-		@-webkit-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}
+.content .title h2 {
+	font-weight: bold;
+	font-size: 4em;
+	margin-bottom: 0px;
+}
 
-		/* Internet Explorer */
-		@-ms-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}​
+.content .title p {
+	font-weight: bold;
+	font-size: 2em;
+	margin: 0px;
+}
 
-		/* Opera */
-		@-o-keyframes fadein {
-			from { opacity: 0; }
-			to   { opacity: 1; }
-		}​
+.content .title {
+	margin-bottom: 40px;
+}
+
+.content .links > a {
+	display: inline-block;
+	color: #16161D;
+	text-decoration: none;
+	margin: 50px;
+	font-size: 6em;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
